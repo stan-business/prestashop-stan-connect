@@ -1,0 +1,43 @@
+{
+    "name": "stan-business/stan-php",
+    "description": "Stan Client Library for PHP",
+    "keywords": [
+        "openapi",
+        "php",
+        "sdk",
+        "rest",
+        "api",
+        "stan"
+    ],
+    "homepage": "https://doc.stan-app.fr",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Stan",
+            "homepage": "https://www.stan-business.fr"
+        }
+    ],
+    "require": {
+        "php": "^7.1 || ^8.0",
+        "ext-curl": "*",
+        "ext-json": "*",
+        "ext-mbstring": "*",
+        "php-http/httplug": "^2.3",
+        "psr/http-message": "^1.0",
+        "php-http/message": "^1.13",
+        "php-http/discovery": "^1.14",
+        "php-http/client-common": "^2.5"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.0 || ^9.0",
+        "friendsofphp/php-cs-fixer": "^2.12",
+        "php-http/mock-client": "^1.5",
+        "php-http/guzzle6-adapter": "^2.0"
+    },
+    "autoload": {
+        "psr-4": { "Stan\\" : "lib/" }
+    },
+    "autoload-dev": {
+        "psr-4": { "Stan\\Test\\" : "test/" }
+    }
+}
